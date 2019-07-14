@@ -30,6 +30,8 @@ Route::resource('C_posts', 'C_PostsController', ['only' => ['create', 'store', '
 //C_コメント追加
 Route::resource('C_comments', 'C_CommentsController', ['only' => ['store']]);
 
+//C_ユーザー一覧
+Route::get('C_index', 'UserController@index')->name('user_index');
 
 //------------
 
